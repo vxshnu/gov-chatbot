@@ -1,0 +1,99 @@
+/* src/components/ChatBox.css */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: rgb(18, 18, 20) rgb(1, 1, 1);
+  padding: 10px;
+  background-color: #282828;
+  color: #ffffff;
+}
+
+.chat-message {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column; /* Added to stack feedback input below message */
+  align-items: start;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 60%;
+  text-align: left;
+}
+
+.user .message {
+  background-color: #007bff;
+  color: #ffffff;
+  border-top-right-radius: 0;
+  margin-left: auto; /* Align user messages to the right */
+ /* margin-right: 320px;  Adjust margin to move messages slightly left */
+  margin-bottom: 15px;
+} 
+
+.bot .message {
+  
+  background-color: #444444;
+  color: #ffffff;
+  border-top-left-radius: 0;
+  margin-bottom: 0%;
+  margin-right: auto; /*Align bot messages to the left */
+ /* margin-left: 318px;  Adjust margin to move messages slightly right */
+}
+
+.feedback-container {
+  margin-top: 3px; /* Adjust spacing between message and feedback input */
+}
+
+.feedback-button {
+  background-color: #353535;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+ /* margin-left: 318px;*/
+  padding: 1px px;
+  cursor: pointer;
+  font-size: xx-small;
+}
+
+.feedback-input {
+  margin-top: 5px; /* Adjust spacing between message and feedback input */
+}
+
+.feedback-input input {
+   /* Adjust input width based on container */
+  padding: 4px;
+  border: none;
+  /*margin-right: auto;  Align bot messages to the left */
+ /* margin-left: 318px;*/
+  border-radius: 5px;
+  
+  background-color: #555555;
+  color: #ffffff;
+  outline: none;
+}
+
+.icon{
+  padding-left: 7px;
+  margin-top: 3px;
+}
+.icon:hover{
+  transform: scale(1.1);
+  
+}
+.popup {
+  position: fixed;
+  top: 20px;  /* Changed from bottom to top */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #121312;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-size: 16px;
+}

@@ -1,0 +1,44 @@
+.left-nav-bar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.left-nav-bar h2 {
+    text-align: center;
+}
+
+.left-nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-nav-bar li {
+    margin: 10px 0;
+}
+
+.left-nav-bar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.left-nav-bar button:hover {
+    background-color: #0056b3;
+}
+
+.upload-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-section input {
+    margin-bottom: 10px;
+}

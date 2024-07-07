@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed;
+  bottom: -2%; /* Position at the bottom */
+  right: 14%;  /* Position at the right */
+  display: flex;
+  flex-direction: column;
+  
+
+  align-items: center; /* Center items horizontally */
+  padding: 10px; /* Optional padding for better spacing */
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(215, 217, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-align: center; /* Center text inside the circle */
+  position: relative; /* Required for the hover text positioning */
+}
+
+.navbar a::after {
+  content: attr(data-hover); /* Use the data-hover attribute for the text */
+  position: absolute;
+  bottom: 120%; /* Position above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.circle-link {
+  
+  border-radius: 50%; /* Make it a circle */
+  margin: 20px 0; /* Space between circles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.circle-link:hover {
+  transform: scale(1.1); /* Slightly enlarge the circle on hover */
+}

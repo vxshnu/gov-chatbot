@@ -1,0 +1,28 @@
+.aboutus-page {
+    padding: 20px;
+    color: white;
+    background-color: #333;
+    padding-left: 300px;
+    height: 100%;
+  }
+  
+  .aboutus-page h1,
+  .aboutus-page h2 {
+    color: #00aced;
+  }
+  
+  
+  .aboutus-page p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .aboutus-page a {
+    color: #00aced;
+    text-decoration: none;
+  }
+  
+  .aboutus-page a:hover {
+    text-decoration: underline;
+  }
+  

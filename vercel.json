@@ -4,8 +4,7 @@
       {
         "src": "front-end/package.json",
         "use": "@vercel/static-build",
-        "config": { "distDir": "front-end/build" },
-        "command": "npm run vercel-build"
+        "config": { "distDir": "front-end/build" }
       }
     ],
     "routes": [

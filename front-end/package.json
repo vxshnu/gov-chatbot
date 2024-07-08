@@ -43,9 +43,9 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-  "node": ">=14.0.0",
-  "npm": ">=6.0.0"
-   }
+   "devDependencies": {
+  "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
+}
+
 
 }
